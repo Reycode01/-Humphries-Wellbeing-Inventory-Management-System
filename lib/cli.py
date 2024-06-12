@@ -1,4 +1,7 @@
+import sys
+import os
 import click
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
 from lib.models.category import Category
 from lib.models.supplier import Supplier
 from lib.models.products import Product
@@ -77,8 +80,9 @@ def list():
     for product in products:
         click.echo(f'{product.id}: {product.name} ({product.quantity})')
 if __name__ == '__main__':
-    initialize_db() 
+    initialize_db()
     cli()
+
 
 
         
