@@ -1,5 +1,3 @@
-# Humphries Wellbeing Inventory Management System
-
 ## Description
 
 This project is a Command-Line Interface (CLI) application for managing an inventory system. The application uses an SQLite database to store data and provides a user-friendly interface to interact with the database.
